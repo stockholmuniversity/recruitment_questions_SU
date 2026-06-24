@@ -18,6 +18,12 @@ Om något skulle vara otydligt eller felaktigt är du välkommen höra av dig ti
 
 Så, sätt dig tillrätta och ta fram din favoriteditor...
 
+Områden
+-------
+1 - Linux och systemdrift
+2 - Systemutveckling
+3 - Nätverk
+
 
 1 -  Linux och systemdrift
 --------------------------
