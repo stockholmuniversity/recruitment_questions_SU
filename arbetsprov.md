@@ -94,17 +94,17 @@ Beskriv vad raden nedan kan tänkas göra steg för steg. Var i strängen är re
 
     :(){ :|: & };:
 
-### keep going, eller?
+#### keep going, eller?
 
 Vilken skillnad är det mellan
 
     ; och &&
 
-### Reflekterande aritmetik
+#### Reflekterande aritmetik
 
 Skriv ut alla tal mellan 1 och 100 med så få tecken som möjligt
 
-### Noob Error
+#### Noob Error
 
 Varför misslyckas följande:
 
