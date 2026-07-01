@@ -148,6 +148,62 @@ Swap på maskinen har vuxit och börjat ta slut. Vad gör du?
 2 - Systemutveckling
 --------------------
 
+### Python
+
+#### Docs
+Vad händer här? Vilket (om något) problem löser koden?
+
+objects_dict = {}
+subsystem = "foo"
+data = "bar"
+try:
+    module = importlib.import_module(subsystem)
+    _class = getattr(module, subsystem.capitalize())
+    objects_dict[subsystem] = _class(data)
+except ImportError as e:
+    objects_dict[subsystem] = str(data)
+
+#### Refactoring
+
+En javakodare har försökt sig på python och skrivit följande enterpriseredo, clean code-certifierade kod, sen dumpat den på dig. Koden kommer aldrig någonsin behöva skrivas om för utökad funktionalitet. I stället för att optimera den för maximal mängd abstraktioner skulle vi vilja optimera för enkelhet och läsbarhet. Hur hade du skrivit den?
+
+import json
+
+class DataLoader:
+    def __init__(self, path: str):
+        self.path = path
+        self._data_dict = None
+
+    def load(self) -> None:
+        with open(self.path, "r") as f:
+            self._data_dict = json.load(f)
+
+    @property
+    def foo(self):
+        if self._data_dict is None:
+            raise RuntimeError("Call load() before accessing foo.")
+        return self._data_dict["foo"]
+
+class BusinessLogic:
+    def compute(self, foo):
+        return foo * 2
+
+class App:
+    def __init__(self, loader: DataLoader, logic: BusinessLogic):
+        self.loader = loader
+        self.logic = logic
+
+    def run(self) -> None:
+        self.loader.load()
+        result = self.logic.compute(self.loader.foo)
+        print(result)
+
+if __name__ == "__main__":
+    app = App(
+        loader=DataLoader("data.json"),
+        logic=BusinessLogic(),
+    )
+    app.run()
 
 3 - Nät
 ------
