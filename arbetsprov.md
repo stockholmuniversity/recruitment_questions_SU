@@ -14,7 +14,7 @@ Maila dina svar tillsammans med källa till imdb@it.su.se inom den tid ni har ko
 
 ### Fel i provet?
 
-Om något skulle vara otydligt eller felaktigt är du välkommen höra av dig till itpraktik@it.su.se.
+Om något skulle vara otydligt eller felaktigt är du välkommen höra av dig till imdb@it.su.se.
 
 Så, sätt dig tillrätta och ta fram din favoriteditor...
 
