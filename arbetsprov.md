@@ -10,7 +10,7 @@ Syftet med testet är att få en bild av din tekniska kompetens inom Linux, syst
 
 Vi kommer i första hand att bedöma *hur* du löser frågorna så halvt lösta uppgifter är även intressanta.
 
-Maila dina svar tillsammans med källa till itpraktik@it.su.se inom den tid ni har kommit fram till. Om du har ett git\*-konto får du gärna skicka länk dit.
+Maila dina svar tillsammans med källa till imdb@it.su.se inom den tid ni har kommit fram till. Om du har ett git\*-konto får du gärna skicka länk dit.
 
 ### Fel i provet?
 
